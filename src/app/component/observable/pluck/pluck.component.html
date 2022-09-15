@@ -1,0 +1,53 @@
+<div class="my-3" style="text-align: center; background-color:aquamarine;">
+    <h2>Pluck Operator</h2>
+</div> 
+<br>
+<div class="container">
+    <div class="row">
+        <div class="col-md-6">
+            <strong>Example - 01</strong>
+            <hr>
+            <p class="bg-light py-2 px-3 border rounded">
+                <strong>Pluck : </strong>By Property
+            </p>
+            <br>
+            <table>
+                <tr>
+                    <th>Name</th>
+                </tr>
+                <tr *ngFor="let item of data">
+                    <td>{{ item }}</td>
+                </tr>
+            </table>
+
+        </div>
+        <div class="col-md-6">
+            <strong>Example - 02</strong>
+            <hr>
+            <p class="bg-light py-2 px-3 border rounded">
+                <strong>Pluck : </strong>Pluck by nested property
+            </p>
+            <br>
+            <table>
+                <tr>
+                    <th>Job > Title</th>
+                </tr>
+                <tr *ngFor="let item of data2">
+                    <td>{{ item }}</td>
+                </tr>
+            </table>
+
+        </div>
+        <hr>
+        <!-- <div class="col-md-12">
+            <strong>Example - 03</strong>
+            <hr>
+            <p class="bg-light py-2 px-3 border rounded">
+                <strong>Pluck : </strong>Map Object Data
+            </p>
+            <br>
+          <ul id="eleContainer"></ul>
+
+        </div> -->
+    </div>
+</div>

@@ -1,0 +1,42 @@
+<h3 style="text-align: center; padding:20px; background-color: aquamarine;">Debounce Time & Distinct Until Changed</h3>
+<br><br>
+<div class="row justify-content-center">
+    <div class="col-md-4">
+        <img src="https://nationaltoday.com/wp-content/uploads/2021/08/Teddy-Bear-Day-640x514.jpg" height="90px"
+            width="90px" alt="">
+    </div>
+</div>
+<hr>
+<div class="row">
+    <div class="col-md-4">
+        <p>Example-1</p><h5 class="text-primary">DebounceTime</h5>
+        <div class="input-group mb-3">
+            <div class="input-group-prepend">
+              <span class="input-group-text" id="inputGroup-sizing-default">Search</span>
+            </div>
+            <input type="text" 
+            class="form-control" 
+            aria-label="Default" 
+            aria-describedby="inputGroup-sizing-default"
+            placeholder="search...."
+            #myInput>
+        </div>
+        <span *ngIf="showData != null">Show the data: <strong class="text-success">{{ showData }}</strong></span>
+    </div>  
+    <div class="col-md-4">
+        <p>Example-2</p><h5 class="text-primary"> DistinctUntilChanged</h5>
+        <div class="input-group mb-3">
+            <div class="input-group-prepend">
+              <span class="input-group-text" id="inputGroup-sizing-default">Search</span>
+            </div>
+            <input type="text"
+             class="form-control"
+             aria-label="Default" 
+             aria-describedby="inputGroup-sizing-default"  
+             placeholder="search...."
+             #myInput2>
+        </div>
+        <span *ngIf="showData2 != null">Show the data: <strong class="text-success">{{ showData2 }}</strong></span>
+
+    </div>  
+</div>

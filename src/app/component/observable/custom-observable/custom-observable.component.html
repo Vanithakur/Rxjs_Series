@@ -1,0 +1,41 @@
+<div class="my-3" style="text-align: center; background-color:aquamarine;">
+    <h2>Custom Observable</h2>
+</div> 
+<br>
+<div class="container">
+    <div class="row">
+        <div class="col-md-6">
+            <strong>Ex -01 (Manual)</strong>
+            <hr>
+            <ul [ngClass]="techStatus == 'completed'? 'completed': techStatus == 'error'? 'error': ''"            
+            class="techList" id="eleContain">
+                <!-- A wise man gets more use from his enemies than a fool from his friends. -->
+
+            </ul>
+        </div>
+        <div class="col-md-6">
+            <strong>Ex -02 (Custom Interval Observable)</strong>
+            <hr>
+            <ul  [ngClass]="techStatus2 == 'completed'? 'completed': techStatus2 == 'error'? 'error': ''" 
+            class="techList"  id="eleContain2"></ul>
+        </div>
+    </div>
+    <br>
+    <div class="row">
+        <div class="col-md-12">
+            <br>
+            <strong>Ex -03 (Random Names)</strong>
+            <br>
+            <br>
+            <p class="bg-light py-2 px-3 border rounded">
+                <strong>Random Names:</strong>'Shivani','Nishi', 'Sonu', 'Roshni', 'Thakur', 'Karve', 'Bagdi', 'Tiwari' 
+            </p>
+            <hr>
+            <p>Current Name: <strong>{{names}}</strong></p>
+            <span [ngClass]="nameStatus == 'completed'? 'text-bg-success': nameStatus == 'error'? 'text-bg-danger':'text-bg-primary'"
+            class="badge">{{ nameStatus == 'completed'? 'Success': nameStatus == 'error'? 'Error':'Running' }}</span>
+
+        </div>
+    </div>
+</div>
+<br>   
